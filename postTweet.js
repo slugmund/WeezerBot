@@ -6,8 +6,6 @@ const dotenv = require("dotenv");
 
 const imageData = fs.readFileSync( "C:\\Users\\alexei\\Desktop\\weezer2\\result.jpg", { encoding: 'base64' } ); //replace with the path to your image
 
-console.log("Pisss");
-
 T.post("media/upload", {media: imageData}, function(error, media, response) {
   if (error) {
     console.log(error);
